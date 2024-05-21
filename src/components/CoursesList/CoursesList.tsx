@@ -1,6 +1,5 @@
 import React from "react";
 import { Course } from "../Course/Course";
-import Layout from "../layouts/Layout"
 
 export type CoursePropsType = {
   title: string,

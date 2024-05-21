@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../layouts/StyledLayout";
 import styled from 'styled-components';
@@ -62,7 +63,7 @@ const Brand: React.FC<{ hovering: boolean }> = ({ hovering }) => {
 
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [hovering, setHovering] = useState(false);
-
+  
   return (
     <>
       <StyledLayout>

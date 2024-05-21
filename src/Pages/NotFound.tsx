@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
+import { Suspense } from 'react';
 import Layout from '../components/layouts/Layout'
 import { useNavigate } from 'react-router-dom';
 
