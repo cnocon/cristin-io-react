@@ -1,3 +1,5 @@
+import WeatherProject from "../../components/WeatherProject";
+
 const COLOR_PRIMARY = "hsl(216, 80%, 39%)";
 const COLOR_PRIMARY_BG = "hsl(216, 100%, 85%)";
 const COLOR_SECONDARY = "hsl(45, 85%, 50%)";
@@ -19,4 +21,17 @@ const themeStyles = {
     primary: LINEAR_RAINBOW_GRADIENT
   }
 };
+
+export const WEATHER_PROJECT_ID = "weather-app"
+
+export const PROJECT_IDS = [
+  `${WEATHER_PROJECT_ID}`
+]
+
+export const PROJECT_COMPONENTS: {
+  [key: string]: React.FC
+} = {
+  "weather-app": WeatherProject
+}
+
 export default themeStyles;

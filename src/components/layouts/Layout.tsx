@@ -54,7 +54,7 @@ const Brand: React.FC<{ hovering: boolean }> = ({ hovering }) => {
     <StyledBrandContainer>
       <StyledBrand className="navbar-brand" href="/">
         <img src="/images/avatar-white.png" alt="Cristin O'Connor illustration" className="rounded rounded-circle" />
-        <h1>Cristin O'Connor</h1>
+        <h1 className="fw-normal fw-bolder font-pacifico">Cristin O'Connor</h1>
       </StyledBrand>
       <p className="badge bg-dark text-light">{hovering && 'Hello!'}</p>
     </StyledBrandContainer>

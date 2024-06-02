@@ -5,7 +5,7 @@ import { BsFillPersonCheckFill, BsGit } from "react-icons/bs"
 import { SiTypescript } from "react-icons/si"
 import { ReactNode } from "react"
 import { TbFishHook } from "react-icons/tb"
-import themeStyles from "../constants"
+import themeStyles from "../utils/constants/constants"
 export type Skill = {
   label: string,
   percentage: string,
