@@ -94,9 +94,16 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
                     </NavLink>
                     <NavLink
                       to="/writing-sample"
+                      style={{whiteSpace: "nowrap", marginRight: "1rem"}}
                       className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
                     >
                       Writing Sample
+                    </NavLink>
+                    <NavLink
+                      to="/portfolio"
+                      className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
+                    >
+                      Projects
                     </NavLink>
                   </nav>
                 </div>

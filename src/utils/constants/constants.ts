@@ -1,3 +1,4 @@
+import ToDosProject from "../../components/ToDosProject";
 import WeatherProject from "../../components/WeatherProject";
 
 const COLOR_PRIMARY = "hsl(216, 80%, 39%)";
@@ -22,16 +23,26 @@ const themeStyles = {
   }
 };
 
-export const WEATHER_PROJECT_ID = "weather-app"
+export const WEATHER_PROJECT_ID = "weather-app";
+export const TODOS_ID = "todos";
 
 export const PROJECT_IDS = [
-  `${WEATHER_PROJECT_ID}`
+  `${WEATHER_PROJECT_ID}`,
+  `${TODOS_ID}`
 ]
 
 export const PROJECT_COMPONENTS: {
   [key: string]: React.FC
 } = {
-  "weather-app": WeatherProject
+  [WEATHER_PROJECT_ID]: WeatherProject,
+  [TODOS_ID]: ToDosProject
+}
+
+export const PROJECT_NAMES: {
+  [key: string]: string
+} = {
+  [WEATHER_PROJECT_ID]: "Weather Search App",
+  [TODOS_ID]: "Fancy To Dos"
 }
 
 export default themeStyles;

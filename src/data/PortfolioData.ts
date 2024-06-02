@@ -11,4 +11,9 @@ export const portfolioProjectData: PortfolioProjectType = {
     description: "This application allows you to get the weather conditions in almost any city.",
     technologies: ["JavaScript", "React", "Bootstrap", "SASS"]
   },
+  "todos": {
+    title: "Fancy To Dos",
+    description: "Fancy.",
+    technologies: ["Redux", "JavaScript", "React", "Bootstrap", "SASS"]
+  },
 }

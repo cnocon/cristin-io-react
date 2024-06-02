@@ -13,6 +13,9 @@ $gray-200: #e9ecef;
 $gray-600: #6c757d;
 $light: $gray-200;
 $dark: #111111;
+$accordion-button-color: $secondary;
+$accordion-button-active-bg: tint-color($secondary, 90%);
+// $accordion-button-active-color: shade-color($secondary, 10%);
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';

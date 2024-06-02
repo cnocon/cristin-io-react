@@ -31,15 +31,15 @@ const Portfolio = () => {
     }
   }, [url]);
 
-  useEffect(() => {
-    console.log("history", history);
-  }, [history]);
-
   return (
     <Layout>
-      <h2 className="text-center h1">Portfolio</h2>
+      <h2 className="text-center h1">Projects</h2>
       {PROJECT_IDS.map((projectKey: string) => {
-        return <><PortfolioProject id={projectKey} key={projectKey} /><hr/></>
+        return (
+          <div className="accordion my-5" id="projects">
+            <PortfolioProject id={projectKey} key={projectKey} />
+          </div>
+        );
       })}
     </Layout>
   )

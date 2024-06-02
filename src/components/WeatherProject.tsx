@@ -30,50 +30,40 @@ const WeatherProject: React.FC = () => {
 
   return (
     <>
-        <div className="row">
-          <div className="col-lg-6">
-
-          <h2 className="my-4">Weather App</h2>
+      <div className="row">
+        <div className="col-lg-6">
+          <h3 className="my-4">Weather Search</h3>
           <p className="mb-4">Search for a city below.</p>
-            <div className="input-group">
-                
-                
-                <span className="input-group-text">City</span>
-                <input
-                  className="form-control"
-                  aria-label="city"
-                  id="city"
-                  type="text"
-                  value={query}
-                  onChange={(e) => {
-                    setQuery(e.target.value);
-                  } }
-                  onKeyDown={(e) => {
-                    setUrl(e.code === "Enter"
-                      ? `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_WEATHERSTACK_API_KEY}&query=${query}`
-                      : ""
-                    );
-                  } } />
-              </div>
-            </div>
-            <div className="col-md-9 col-12 mr-auto my-5" role="alert" aria-live="polite" aria-atomic={true}>
-                {data?.current && (
-                  <WeatherBanner data={data} />
-                )}
-                {data?.success === false && (
-                  <div className="alert alert-primary">
-                    <p className="m-0 text-center">No data available for <span className="fw-bolder">{query}</span>.</p>
-                  </div>
-                )}
-              </div>
+          <div className="input-group">
+            <span className="input-group-text">City</span>
+            <input
+              className="form-control"
+              aria-label="city"
+              id="city"
+              type="text"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+              } }
+              onKeyDown={(e) => {
+                setUrl(e.code === "Enter"
+                  ? `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_WEATHERSTACK_API_KEY}&query=${query}`
+                  : ""
+                );
+              } } />
           </div>
-
-            
-              
-            
-              
-            
-          
+        </div>
+        <div className="col-md-9 col-12 mr-auto my-5" role="alert" aria-live="polite" aria-atomic={true}>
+          {data?.current && (
+            <WeatherBanner data={data} />
+          )}
+          {data?.success === false && (
+            <div className="alert alert-primary">
+              <p className="m-0 text-center">No data available for <span className="fw-bolder">{query}</span>.</p>
+            </div>
+          )}
+        </div>
+      </div>
       {Object.keys(history)?.length > 1 && (
         <div className="col-12 my-5">
           <h4 className="my-4 font-open-sans fw-normal">Weather App Search History</h4>
@@ -82,7 +72,6 @@ const WeatherProject: React.FC = () => {
           </section>
         </div>
       )}
-
   </>
   )
 }
