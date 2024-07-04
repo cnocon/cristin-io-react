@@ -32,6 +32,7 @@ export const Home = () => {
     <StyledContainer>
       <Link to="/resume" style={linkStyle}>Resume</Link>
       <Link to="/writing-sample" style={linkStyle}>Writing Sample</Link>
+      <Link to="/portfolio" style={linkStyle}>Portfolio</Link>
     </StyledContainer>
 
     <h2 style={{textAlign: "center", paddingLeft: 0, textTransform: "uppercase", fontWeight: 800, fontFamily: "Lato, sans-serif" }}>

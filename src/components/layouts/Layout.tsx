@@ -103,7 +103,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
                       to="/portfolio"
                       className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
                     >
-                      Projects
+                      Portfolio
                     </NavLink>
                   </nav>
                 </div>

@@ -6,11 +6,13 @@ import { SiTypescript } from "react-icons/si"
 import { ReactNode } from "react"
 import { TbFishHook } from "react-icons/tb"
 import themeStyles from "../utils/constants/constants"
+
 export type Skill = {
   label: string,
   percentage: string,
   icon: ReactNode
 }
+
 const data = {
   courses: [
     {

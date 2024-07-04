@@ -1,7 +1,7 @@
-import { WEATHER_PROJECT_ID } from "../utils/constants/constants"
+import { PROJECT_IDS } from "../utils/constants/constants"
 
 export const portfolioData = {
-  projects: [WEATHER_PROJECT_ID]
+  projects: PROJECT_IDS
 }
 
 export interface PortfolioProjectsType {
@@ -10,8 +10,10 @@ export interface PortfolioProjectsType {
 
 export interface PortfolioProjectType { 
   [key: string]: {
-    title: string,
-    description: string,
-    technologies: string[]
+    title: string;
+    description: string;
+    technologies: string[];
+    demoURL: string;
+    imageURL: string;
   }
 };

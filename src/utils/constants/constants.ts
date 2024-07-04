@@ -1,5 +1,5 @@
-import ToDosProject from "../../components/ToDosProject";
-import WeatherProject from "../../components/WeatherProject";
+import React from "react";
+import PortfolioProject from "../../components/PortfolioProject";
 
 const COLOR_PRIMARY = "hsl(216, 80%, 39%)";
 const COLOR_PRIMARY_BG = "hsl(216, 100%, 85%)";
@@ -23,26 +23,34 @@ const themeStyles = {
   }
 };
 
-export const WEATHER_PROJECT_ID = "weather-app";
-export const TODOS_ID = "todos";
+export const CRISTIN_IO_GATSBY = "cristin-io-gatsby";
+export const CRISTIN_IO_NUXT = "cristin-io-nuxt";
+export const POKEMON_INFO_SITE = "pokemon-info-site";
+export const CRISTINOCONNOR_DOT_COM = "cristinoconnor-dot-com";
 
 export const PROJECT_IDS = [
-  `${WEATHER_PROJECT_ID}`,
-  `${TODOS_ID}`
-]
+  CRISTIN_IO_GATSBY,
+  CRISTINOCONNOR_DOT_COM,
+  CRISTIN_IO_NUXT,
+  POKEMON_INFO_SITE
+];
 
 export const PROJECT_COMPONENTS: {
-  [key: string]: React.FC
+  [key: string]: React.FC<{ id: string }>
 } = {
-  [WEATHER_PROJECT_ID]: WeatherProject,
-  [TODOS_ID]: ToDosProject
+  [CRISTIN_IO_GATSBY]: PortfolioProject,
+  [CRISTINOCONNOR_DOT_COM]: PortfolioProject,
+  [CRISTIN_IO_NUXT]: PortfolioProject,
+  [POKEMON_INFO_SITE]: PortfolioProject
 }
 
 export const PROJECT_NAMES: {
   [key: string]: string
 } = {
-  [WEATHER_PROJECT_ID]: "Weather Search App",
-  [TODOS_ID]: "Fancy To Dos"
+  [CRISTIN_IO_GATSBY]: "Gatsby Portfolio Site",
+  [CRISTINOCONNOR_DOT_COM]: "React Portfolio Site",
+  [CRISTIN_IO_NUXT]: "Nuxt Portfolio Site",
+  [POKEMON_INFO_SITE]: "Simple Pokémon Site"
 }
 
 export default themeStyles;

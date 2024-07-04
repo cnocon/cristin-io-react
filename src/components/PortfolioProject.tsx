@@ -1,25 +1,33 @@
-  import React, { useState } from "react";
-import { PROJECT_COMPONENTS, PROJECT_NAMES } from "../utils/constants/constants";
+import React from "react";
+import { portfolioProjectData } from "../data/PortfolioData";
 
 const PortfolioProject: React.FC<{ id: string }> = ({ id }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const ProjectComponent = PROJECT_COMPONENTS[id];
-  const projectName = PROJECT_NAMES[id];
-  const isFirstProject = id === "weather-app"
+  interface IProjectData {
+    title: string;
+    description: string;
+    technologies: string[];
+    demoURL: string;
+    imageURL: string;
+  }
+  const projectData: IProjectData = portfolioProjectData?.[id];
 
+  if (!projectData) {
+    <p>Loading...</p>
+  }
   return (
-    <div className="accordion-item">
-      <h2 className="h2 accordion-header" id={`heading-${id}`}>
-        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#${id}`} aria-expanded={isOpen} aria-controls={id} onClick={(e) => setIsOpen(!isOpen)}>
-          {projectName}
-        </button>
-      </h2>
-      <div id={id} className={`${isOpen || (!isOpen && isFirstProject) ? 'accordion-collapse collapse show' : 'accordion-collapse collapse'}`} aria-labelledby={`heading-${id}`} data-bs-parent="#projects">
-        <div className="accordion-body">
-          <ProjectComponent />
-        </div>
+    projectData ? (
+    <div className="card my-5" style={{flexBasis: "340px"}}>
+      <div className="card-body">
+        <h5 className="card-title text-center">{projectData?.title}</h5>
+        <img src={projectData?.imageURL} className="card-img" alt={projectData?.title} />
+        <p className="card-text mt-4">
+          {projectData?.description}
+          {projectData?.technologies.map((tech, index) => index === projectData?.technologies.length - 1 ? tech : `${tech}, `)}
+        </p>
+        <p><a href={projectData?.demoURL} target="_blank" rel="noopener noreferrer">Visit Demo Site</a></p>
       </div>
     </div>
+    ) : <p>Loading</p>
   )
 };
 
