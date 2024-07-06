@@ -3,8 +3,8 @@ import { PortfolioProjectType } from "../types/PortfolioTypes"
 export const portfolioProjectData: PortfolioProjectType = {
   "github-stats-card": {
     title: "GitHub Stats Card",
-    description: "",
-    technologies: ["React", "GitHub API", ""],
+    description: "A package that allows you to display your GitHub stats by username.",
+    technologies: ["React", "GitHub API"],
     demoURL: "https://react-github-stats-card-v2-demo.netlify.app/",
     imageURL: "https://www.dropbox.com/scl/fi/45weaqwk6zonw16bj8tju/github-stats-card.png?rlkey=a24nmj8v23mpsl0tzxu9we0uu&st=89job5yj&dl=1"
   },
@@ -17,14 +17,14 @@ export const portfolioProjectData: PortfolioProjectType = {
   },
   "cristinoconnor-dot-com": {
     title: "React Portfolio Site",
-    description: "My current portfolio site (this website).",
+    description: "My current portfolio site is built in React and styled with Bootstrap.",
     technologies: ["JavaScript", "React", "Bootstrap", "SASS"],
     demoURL: "https://cristinoconnor.com",
     imageURL: "https://www.dropbox.com/scl/fi/xl66rgl6zdrvfp3n9cy8w/react.png?rlkey=czv0vz3wuqrjr9oojolyqfl4g&st=0jff55bh&dl=1"
   },
   "youtube-search": {
     title: "YouTube Search App",
-    description: "Search for and watch YouTube content.",
+    description: "Search for and watch content retrieved from YouTube.",
     technologies: ["React", "Axios"],
     demoURL: "https://youtube-search-new.netlify.app/",
     imageURL: "https://www.dropbox.com/scl/fi/sx77ieteirojijxi8oyyo/youtube-search.png?rlkey=a6gkvawep1r3ypxnxjss098jm&st=voshdujh&dl=1"
@@ -37,9 +37,9 @@ export const portfolioProjectData: PortfolioProjectType = {
     imageURL: "https://www.dropbox.com/scl/fi/gwyeseicpz8gnnhn4gws4/nuxt.png?rlkey=8bllgog3brvcua2od1r6sj6m4&st=01pwn5nt&dl=1"
   },
   "pokemon-info-site": {
-    title: "Simple Pokémon Information Site",
-    description: "A simple React site that shows sortable, favoritable, Pokémon data",
-    technologies: ["React"],
+    title: "Pokémon Stats",
+    description: "A simple React site that shows sortable, favoritable, Pokémon data in a table.",
+    technologies: ["React", "React Table"],
     demoURL: "https://pokemon-spa.netlify.app/",
     imageURL: "https://www.dropbox.com/scl/fi/9s4x5dx5mfnxw3gv2e7om/pokemon.png?rlkey=5b9kn2iatidnzsxney97hwde3&st=375f65n1&dl=1"
   }
