@@ -18,8 +18,12 @@ const PortfolioProject: React.FC<{ id: string }> = ({ id }) => {
     projectData ? (
     <div className="card my-5" style={{flexBasis: "340px"}}>
       <div className="card-body">
-        <h5 className="card-title text-center">{projectData?.title}</h5>
-        <img src={projectData?.imageURL} className="card-img" alt={projectData?.title} />
+        <h3 className="card-title text-center">{projectData?.title}</h3>
+        <a href={projectData?.demoURL} target="_blank" rel="noopener noreferrer">
+          <span style={{display: "block"}}>
+            <img src={projectData?.imageURL} className="card-img" alt={`Go to ${projectData?.title}`} />
+          </span>
+        </a>
         <p className="card-text mt-4">
           {projectData?.description}
           {projectData?.technologies.map((tech, index) => index === projectData?.technologies.length - 1 ? tech : `${tech}, `)}

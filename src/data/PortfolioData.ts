@@ -1,6 +1,13 @@
 import { PortfolioProjectType } from "../types/PortfolioTypes"
 
 export const portfolioProjectData: PortfolioProjectType = {
+  "github-stats-card": {
+    title: "GitHub Stats Card",
+    description: "",
+    technologies: ["React", "GitHub API", ""],
+    demoURL: "https://react-github-stats-card-v2-demo.netlify.app/",
+    imageURL: "https://www.dropbox.com/scl/fi/45weaqwk6zonw16bj8tju/github-stats-card.png?rlkey=a24nmj8v23mpsl0tzxu9we0uu&st=89job5yj&dl=1"
+  },
   "cristin-io-gatsby": {
     title: "Gatsby Portfolio Site",
     description: "I redid my portfolio site in multiple frameworks, including Gatsby.",
@@ -14,6 +21,13 @@ export const portfolioProjectData: PortfolioProjectType = {
     technologies: ["JavaScript", "React", "Bootstrap", "SASS"],
     demoURL: "https://cristinoconnor.com",
     imageURL: "https://www.dropbox.com/scl/fi/xl66rgl6zdrvfp3n9cy8w/react.png?rlkey=czv0vz3wuqrjr9oojolyqfl4g&st=0jff55bh&dl=1"
+  },
+  "youtube-search": {
+    title: "YouTube Search App",
+    description: "Search for and watch YouTube content.",
+    technologies: ["React", "Axios"],
+    demoURL: "https://youtube-search-new.netlify.app/",
+    imageURL: "https://www.dropbox.com/scl/fi/sx77ieteirojijxi8oyyo/youtube-search.png?rlkey=a6gkvawep1r3ypxnxjss098jm&st=voshdujh&dl=1"
   },
   "cristin-io-nuxt": {
     title: "Nuxt Portfolio Site",

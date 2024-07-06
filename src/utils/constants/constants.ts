@@ -27,11 +27,15 @@ export const CRISTIN_IO_GATSBY = "cristin-io-gatsby";
 export const CRISTIN_IO_NUXT = "cristin-io-nuxt";
 export const POKEMON_INFO_SITE = "pokemon-info-site";
 export const CRISTINOCONNOR_DOT_COM = "cristinoconnor-dot-com";
+export const YOUTUBE_SEARCH = "youtube-search";
+export const GITHUB_STATS_CARD = "github-stats-card";
 
 export const PROJECT_IDS = [
+  GITHUB_STATS_CARD,
   CRISTIN_IO_GATSBY,
-  CRISTINOCONNOR_DOT_COM,
   CRISTIN_IO_NUXT,
+  YOUTUBE_SEARCH,
+  CRISTINOCONNOR_DOT_COM,
   POKEMON_INFO_SITE
 ];
 
@@ -41,7 +45,9 @@ export const PROJECT_COMPONENTS: {
   [CRISTIN_IO_GATSBY]: PortfolioProject,
   [CRISTINOCONNOR_DOT_COM]: PortfolioProject,
   [CRISTIN_IO_NUXT]: PortfolioProject,
-  [POKEMON_INFO_SITE]: PortfolioProject
+  [POKEMON_INFO_SITE]: PortfolioProject,
+  [YOUTUBE_SEARCH]: PortfolioProject,
+  [GITHUB_STATS_CARD]: PortfolioProject
 }
 
 export const PROJECT_NAMES: {
