@@ -4,7 +4,7 @@ import { MdOutlineSchool } from "react-icons/md";
 import { CoursePropsType } from "../CoursesList/CoursesList";
 import * as S from "./Course.styled";
 import { IconType } from "react-icons";
-import themeStyles from "../../constants"
+import themeStyles from "../../utils/constants/constants"
 
 type CourseTitleProps = {
   title: string,

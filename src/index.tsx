@@ -12,6 +12,7 @@ import { Resume } from "./Pages/Resume"
 // import { Home } from "./Pages/Home"
 import { WritingSample } from './Pages/WritingSample';
 import NotFound from './Pages/NotFound';
+import Portfolio from './Pages/Portfolio';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
     path: "/writing-sample",
     element: <WritingSample />,
     loader: () => data
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />
   },
   {
     path: "*",

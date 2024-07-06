@@ -54,7 +54,7 @@ const Brand: React.FC<{ hovering: boolean }> = ({ hovering }) => {
     <StyledBrandContainer>
       <StyledBrand className="navbar-brand" href="/">
         <img src="/images/avatar-white.png" alt="Cristin O'Connor illustration" className="rounded rounded-circle" />
-        <h1>Cristin O'Connor</h1>
+        <h1 className="fw-normal fw-bolder font-pacifico">Cristin O'Connor</h1>
       </StyledBrand>
       <p className="badge bg-dark text-light">{hovering && 'Hello!'}</p>
     </StyledBrandContainer>
@@ -94,9 +94,16 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
                     </NavLink>
                     <NavLink
                       to="/writing-sample"
+                      style={{whiteSpace: "nowrap", marginRight: "1rem"}}
                       className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
                     >
                       Writing Sample
+                    </NavLink>
+                    <NavLink
+                      to="/portfolio"
+                      className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
+                    >
+                      Portfolio
                     </NavLink>
                   </nav>
                 </div>
