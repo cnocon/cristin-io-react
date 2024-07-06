@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { portfolioProjectData } from "../data/PortfolioData";
 
 const PortfolioProject: React.FC<{ id: string }> = ({ id }) => {
@@ -28,8 +28,6 @@ const PortfolioProject: React.FC<{ id: string }> = ({ id }) => {
       <div className="card-body">
         <h3 className="card-title text-center">{projectData?.title}</h3>
         <a href={projectData?.demoURL} target="_blank" rel="noopener noreferrer">
-
-
           <img onLoad={imageLoaded} src={projectData?.imageURL} className="card-img" alt={`Go to ${projectData?.title}`} width="340px" height="250" style={{ display: isLoadingImages ? "none" : "block", width: "100%", height: "250px", minHeight: "250px", maxHeight: "250px"}} />
 
           <div style={{height: "250px", justifyContent: "center", alignItems: "center",  display: isLoadingImages ? "flex" : "none"}}>
