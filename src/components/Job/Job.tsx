@@ -33,7 +33,7 @@ export const Job = ({
   const startDate = dayjs(start).format("MMM YYYY")
 
   return (
-    <StyledJob className="job card py-3 px-2">
+    <StyledJob className="job card py-3 px-2 shadow">
       <header className="card-header bg-white border-bottom-0">
         <JobTitle key={`job-${company}`}>{title}</JobTitle>
         <Company>

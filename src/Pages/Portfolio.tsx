@@ -10,7 +10,7 @@ const Portfolio = () => {
     <Layout>
       <PageTitle text="Portfolio" />
       <FlexWrapper wrap={true} id="portfolio-projects">
-        {PROJECT_IDS.map((projectKey: string) => 
+        {PROJECT_IDS.map((projectKey: string) =>
           <PortfolioProject id={projectKey} key={projectKey} />
         )}
       </FlexWrapper>

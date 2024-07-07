@@ -111,7 +111,7 @@ export const Course: React.FC<CoursePropsType> = (props) => {
   } = props;
 
   return (
-    <div className="card px-4 pt-2 mb-4 pb-3" style={{textAlign: "center"}}>
+    <div className="card px-4 pt-2 mb-4 pb-3 shadow" style={{textAlign: "center"}}>
       <CourseTitle
         title={title}
         url={url}
