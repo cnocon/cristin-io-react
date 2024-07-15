@@ -99,12 +99,12 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
                     >
                       Writing Sample
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                       to="/portfolio"
                       className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
                     >
                       Portfolio
-                    </NavLink>
+                    </NavLink> */}
                   </nav>
                 </div>
                 </StyledCenterDiv>
