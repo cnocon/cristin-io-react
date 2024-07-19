@@ -34,7 +34,7 @@ const data = {
       platform: "ui.dev",
       Icon: TbFishHook,
       instructor: null,
-      completedDate: "In Progress",
+      completedDate: "04/15/2022",
       certificateUrl: null,
       description: "",//"Anim ipsum excepteur adipisicing aliquip nulla pariatur exercitation aute consequat commodo officia veniam aliquip culpa. Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
       imageUrl: "https://ui.dev/images/hook.svg",
@@ -95,7 +95,7 @@ const data = {
         icon: FaReact
       },
       {
-        label: "Component Libraries (ChakraUI, Bootstrap, Material Design)",
+        label: "React Component Libraries",
         percentage: 82,
         icon: MdOutlineSettingsInputComponent
       },
