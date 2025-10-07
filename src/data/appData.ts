@@ -1,8 +1,7 @@
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io"
 import { FaReact } from "react-icons/fa"
-import { MdMobileFriendly, MdOutlineSettingsInputComponent, MdDataObject } from "react-icons/md"
+import { MdMobileFriendly, MdDataObject } from "react-icons/md"
 import { BsFillPersonCheckFill, BsGit } from "react-icons/bs"
-import { SiTypescript } from "react-icons/si"
 import { ReactNode } from "react"
 import { TbFishHook } from "react-icons/tb"
 import themeStyles from "../utils/constants/constants"
@@ -90,39 +89,39 @@ const data = {
     ],
     technicalSkills: [
       {
+        label: "JavaScript",
+        percentage: 90,
+        icon: IoLogoJavascript
+      },
+      {
         label: "React",
-        percentage: 85,
+        percentage: 90,
         icon: FaReact
       },
       {
-        label: "React Component Libraries",
-        percentage: 82,
-        icon: MdOutlineSettingsInputComponent
-      },
-      {
-        label: "Full Stack JavaScript",
-        percentage: 80,
-        icon: IoLogoJavascript
-      },
-      {
-        label: "Web Accessibility",
-        percentage: 80,
-        icon: BsFillPersonCheckFill
-      },
-      {
         label: "TypeScript",
-        percentage: 80,
+        percentage: 85,
         icon: IoLogoJavascript
       },
       {
-        label: "SCSS, LESS, CSS",
-        percentage: 80,
+        label: "SCSS, LESS, CSS3",
+        percentage: 85,
         icon: IoLogoCss3
       },
       {
-        label: "Playwright, Jest, TestCafé, RTL",
-        percentage: 75,
+        label: "Web Accessibility",
+        percentage: 85,
+        icon: BsFillPersonCheckFill
+      },
+      {
+        label: "Playwright, Jest, RTL, TestCafé",
+        percentage: 80,
         icon: MdDataObject
+      },
+      {
+        label: "Git, GitHub",
+        percentage: 78,
+        icon: BsGit
       },
       {
         label: "Responsive Web Development",
@@ -130,14 +129,9 @@ const data = {
         icon: MdMobileFriendly
       },
       {
-        label: "Git, GitHub, GitHub Actions",
-        percentage: 70,
+        label: "GitHub Actions",
+        percentage: 60,
         icon: BsGit
-      },
-      {
-        label: "TypeScript",
-        percentage: 70,
-        icon: SiTypescript
       },
       {
         label: "Ruby, Ruby on Rails",
@@ -145,65 +139,113 @@ const data = {
         icon: MdDataObject
       }
     ],
-    softSkills: [ "Empathy to be an effective teammate", "Organizational abilities for managing projects independently", "Research skills to find the best solutions", "Enthusiasm and passion for front end work", "Positive attitude and willingness to handle a wide variety of responsibilities", "Effective communicator with people from varying technical backgrounds", "Dedicated to ongoing professional development", "5+ years of Agile experience", "12+ years of experience working on web applications in various capacities" ],
+    softSkills: [ "Dedicated to mentorship, teaching and helping others", "Empathy to be an effective teammate", "Initiative to become an SME for broad range of technologies", "15+ years of coding experience throughout the stack","Committed to ongoing professional growth and development", "Passion for high quality solutions, ease of code maintenance, and quality documentation", "Effective writer and communicator for audiences with varying technical skills" ],
     workHistory: [ {
-      year: "2022-23",
+      year: "August 2022-Present",
       title: "Software Engineer",
-      location: "Chicago, IL (remote)",
-      company: "CityBase, Inc.",
+      location: "Chicago, IL (Remote)",
+      company: "Euna Solutions",
       start: "08/01/2022",
       end: "Present",
-      companyUrl: "https://citybase.com",
-      description: [ `Maintained and added new features to multiple single page web applications, utilizing technologies including JavaScript, Yarn, NPM, Webpack, Parcel, React, Redux, RxJS, TypeScript, SCSS, and GraphQL`, `Care for and grow a proprietary React component library, and integrate those components successfully into myriad contexts`, `Incrementally set up and convert JavaScript codebases to use TypeScript (front end and full stack)`, `Participate in design critiques (along with other engineers) to help facilitate cross-discipline knowledge transfer and early detection of potential gotchas in development`, `Upgraded our CI pipeline by incorporating Playwright tests to automatically run against the latest commit in a PR, leveraging Docker and GitHub Actions`, `Planned and executed accessibility overhauls of several front-end applications to bring them into compliance with WCAG 2.2 AA`      ],
-      technologies: [ "AdvancedJS", "React", "TypeScript", "Functional Programming", "a11y", "GraphQL", "GitHub Actions", "Storybook" ],
+      companyUrl: "https://thecitybase.com/",
+      description: [ `Decreased time to run automated Playwright test suite in CI pipeline by ~10% using Docker and GitHub Actions`, `Became the subject matter expert for accessibility, floating between teams to educate and ensure future compliance with the Web Content Accessibility Guidelines 2.2 Level AA`, `Doubled frontend test coverage with Playwright, React Testing Library, and Jest`, `Converted JavaScript into TypeScript across multiple frontends`     ],
+      technologies: [ "JavaScript", "React", "TypeScript", "Functional Programming", "Accessibility", "Storybook", "GitHub Actions", "Redux" ],
       honors: []
     },
     {
-      year: "2022",
-      title: "Sr. Front End Engineer",
-      location: "San Francisco, CA (remote)",
+      year: "January 2022 - June 2022",
+      title: "Senior Front End Engineer",
+      location: "Oakland, CA (remote)",
       company: "Nabis",
       start: "01/01/2022",
       end: "06/01/2022",
       companyUrl: "https://nabis.com",
-      description: [ `Worked with product managers and graphic designers to overhaul the existing UI/ UX with the goal of creating a single pristine user experience throughout the application ecosystem`, `Oversaw the introduction of a new design system to the codebase using Chakra UI's component library, extending Chakra UI where needed for custom components using React, GraphQL, CSS, and SCSS`, `Supervised two consultants in developing reusable components for Nabis' new design system`, `Improved accessibility and performance of an online marketplace search utility` ],
-      technologies: [ "ES6", "React", "TypeScript", "ChakraUI", "SASS" ],
+      description: [ `Led the overhaul of the existing UI and UX using React and the Chakra UI component library`, `Created, contributed to, and supervised multiple contractors in the development of a new design system`, `Updated the marketplace search code to be compliant with the WCAG 2.2. Level AA` ],
+      technologies: [ "JavaScript", "React", "TypeScript", "ChakraUI", "SCSS", "E-Commerce", "Accessibility", "Mentorship" ],
       honors: []
     },
     {
-      year: "2021",
+      year: "February 2021 - December 2021",
       title: "Software Engineer",
       company: "Vivint Smart Home, Inc",
       location: "Lehi, UT",
       start: "02/01/2021",
       end: "12/31/2021",
       companyUrl: "https://www.vivint.com/",
-      description: [ `Coded the front-end for multiple JavaScript-based sales applications, leveraging technologies including Vue.js, TypeScript, LESS, and Ember.js`, `Spearheaded the creation of new documentation and code quality standards for front-end development within the sales department`, `Provided full stack on-call support for emergencies, leveraging logs and data from Splunk, Dynatrace, and AppDynamics to quickly identify and ﬁx critical bugs under pressure (in a 24/7 rotation for a week each month)`, `Created a new onboarding process for front-end and full stack engineers in sales (for current employees and new hires) that aimed to reduce sales' isolation from the company's broader front-end initiatives and practices`],
-      technologies: [ "Ember", "Vue", "LESS", "TypeScript" ],
-      honors: [ { name: "Innovation Week Presenter", detail: "Nov 2021" } ]
+      description: [ `Saved sales engineers from two months of database work by proposing a UI-based solution that took one hour to implement`, `Created a front end style guide for cross-team code quality standards on the front end using Confluence and Storybook`, `Executed fullstack tasks using the Salesforce API, Postgres, JavaScript, Ember, and Vue`],
+      technologies: [ "Ember", "Vue", "LESS", "TypeScript", "E-Commerce", "JavaScript", "Salesforce" ],
+      honors: [ { name: "Innovation Week Presenter", detail: "November 2021" } ]
     },
     {
-      year: "2020-21",
+      year: "February 2019 - February 2020",
       title: "Front End Developer II",
       company: "Clearlink",
       location: "Salt Lake City, UT",
       start: "02/01/2020",
       end: "02/01/2021",
       companyUrl: "https://www.clearlink.com/",
-      description: [ `Coded responsive websites from mockups using Handlebars, SCSS, JavaScript, and a proprietary component library`, `Assisted in maintaining and extending applications using JavaScript`, `Mentored and supported junior developers`, `Extended functionality of component library core package`, `Supported a broad range of browsers and devices with a focus on accessibility`],
-      technologies: [ "JavaScript", "PHP", "React", "Gatsby" ],
+      description: [ `Mentored and supported junior developers`, `Learned how to use the React-based Gatsby framework as a static site generator, eventually becoming an SME for all frontend developers on the team`, `Supported a broad range of browsers and devices with a focus on accessibility and modular code`],
+      technologies: [ "JavaScript", "PHP", "React", "Gatsby", "Responsive Web Development", "Mentorship" ],
       honors: [ { name: "Frontend Project Showcase Winner", detail: "July 2020" }, { name: "Frontend Project Showcase Winner", detail: "Oct 2020" } ]
     },
     {
-      year: "2018-19",
+      year: "April 2018 - June 2019",
       title: "Software Engineer",
       company: "The Scion Group",
       location: "Chicago, IL",
-      start: "Apr 2018",
-      end: "Jun 2019",
+      start: "04/01/2018",
+      end: "05/31/2019",
       companyUrl: "https://www.thesciongroup.com/",
-      description: [ `Increased average page load speed by a factor of four`, `Updated in-house business intelligence software to use StimulusJS, DataTables, Highcharts, Rails 5, and data from multiple third party APIs including ADP, Entrata, Centro, and Chatmeter`, `Redesigned UI/UX for a more modern, clean, look and feel`, `Aggregated over a dozen third party data sources into a data warehouse via an ETL application` ],
-      technologies: [ "Ruby", "Rails", "JavaScript", "SQL" ],
+      description: [ `Increased average page load speed by a factor of four by eliminating n+1 queries in Ruby on Rails application`, `Lead and helped to implement the redesign of the internal business intelligence tool frontend, start to finish`, `Converted ancient JavaScript code to improve the developer experience using StimulusJS, DataTables, Highcharts, Rails 5, and data from multiple third party APIs including ADP, Entrata, Centro, and Chatmeter`, `Helped to aggregate hundreds of millions of records daily via an ETL process using SQL Server, multiple APIs, and Snowflake into a data warehouse` ],
+      technologies: [ "Ruby", "Ruby on Rails", "JavaScript", "SQL", "StimulusJS", "Highcharts", "DataTables", "Snowflake", "ETL" ],
+      honors: []
+    },
+    {
+      year: "July 2015 - September 2017",
+      title: "Software Engineer",
+      company: "NCSA Next College Student Athlete",
+      location: "Chicago, IL",
+      start: "07/01/2015",
+      end: "09/31/2017",
+      companyUrl: "https://www.ncsasports.org/",
+      description: [ `Floated between the separate design team and engineering teams, leveraging LESS, CoffeeScript, Slim, JavaScript, React, Backbone, Ruby, Ruby on Rails, and ActiveRecord` ],
+      technologies: [ "JavaScript", "Backbone", "Ruby", "Ruby on Rails", "Less", "React", "CoffeeScript", "Slim", "ActiveRecord" ],
+      honors: []
+    },
+    {
+      year: "August 2014 - March 2015",
+      title: "Junior Frontend Engineer",
+      company: "DialogTech (now Invoca)",
+      location: "Chicago, IL",
+      start: "09/01/2014",
+      end: "03/31/2015",
+      companyUrl: "https://www.invoca.com/",
+      description: [ `Converted mockups into responsive, data-driven web pages with MongoDB, Node, Express, Backbone, Less, Node, Mustache, Lodash, and Handlebars` ],
+      technologies: [ "JavaScript", "Backbone", "Node", "Git", "LESS" ],
+      honors: []
+    },
+    {
+      year: "May 2014 - July 2014",
+      title: "Rails Developer",
+      company: "Blueye Creative",
+      location: "Chicago, IL",
+      start: "09/01/2014",
+      end: "03/31/2015",
+      companyUrl: "https://no.linkedin.com/company/blueye",
+      description: [ `Built a new database for Wilson’s tennis racket inventory with a Microsoft Access front end and Ruby on Rails`, `Created a script to parse, import, and restructure years of inconsistently formatted Excel spreadsheet data with Ruby scripts` ],
+      technologies: [ "Ruby", "Ruby on Rails", "Microsoft Access", "SQL" ],
+      honors: []
+    },
+    {
+      year: "May 2011 - December 2013",
+      title: "Web Support Developer",
+      company: "University of Notre Dame",
+      location: "Notre Dame, IN",
+      start: "05/01/2011",
+      end: "12/31/2013",
+      companyUrl: "https://nd.edu",
+      description: [ `Served as the sole support developer for ~400 websites built with a homegrown Ruby on Rails-powered content management system`, `Designed, developed and wrote up an extensive troubleshooting guide and supporting documentation for our CMS to aid clients`, `Excelled at writing for support blog and communication with non-technical clients`, `Led weekly trainings in the Rails-based content management system with a focus on search engine optimization and understandable content for clients with varying levels of technical proficiency`, `Provided great customer service over the phone, in-person, and via email for clients that resulted in an Employee of the Quarter distinction`, `Converted PSD mockups into mobile-first, responsive websites utilizing liquid templating, HTML5, and CSS` ],
+      technologies: [ "JavaScript", "HTML5", "CSS", "Liquid", "CMS", "Customer Service", "Responsive Web Development" ],
       honors: []
     }
     ]
