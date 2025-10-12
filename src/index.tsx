@@ -9,7 +9,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Resume } from "./Pages/Resume"
-// import { Home } from "./Pages/Home"
 import { WritingSample } from './Pages/WritingSample';
 import NotFound from './Pages/NotFound';
 import Portfolio from './Pages/Portfolio';

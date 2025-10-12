@@ -1,5 +1,4 @@
 import React from "react";
-// import { useLoaderData } from "react-router-dom"
 import { Job as JobType } from "../data/types"
 import { siteData  } from "../index"
 import { Job } from "../components/Job/Job";

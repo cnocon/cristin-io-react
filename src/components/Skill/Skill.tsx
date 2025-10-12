@@ -71,4 +71,3 @@ export const Skill = (props: SkillType) => {
   </div>
   )
 }
-
