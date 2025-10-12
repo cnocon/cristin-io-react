@@ -1,3 +1,4 @@
+import React from "react";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io"
 import { FaReact } from "react-icons/fa"
 import { MdMobileFriendly, MdDataObject } from "react-icons/md"
@@ -252,4 +253,4 @@ const data = {
   }
 }
 
-export default data
+export default data;

@@ -1,6 +1,7 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom"
+// import { useLoaderData } from "react-router-dom"
 import { Job as JobType } from "../data/types"
+import { siteData  } from "../index"
 import { Job } from "../components/Job/Job";
 import Layout from "../components/layouts/Layout"
 import { Skill as SkillType } from "../data/types";
@@ -10,16 +11,8 @@ import { EducationType } from "../data/types";
 import { ResumeSectionTitle } from "./Resume.styled"
 import { CoursesList } from "../components/CoursesList/CoursesList";
 export const Resume = () => {
-  const loaderData: any = useLoaderData();
-  const [data, setData] = React.useState(loaderData);
-
-  React.useEffect(() => {
-    if (loaderData) {
-      setData(loaderData)
-      console.log(data.resume);
-    }
-    
-  }, [loaderData, data.resume])
+  const data = React.useContext(siteData);
+  console.log('data', data);
 
   return (
     <Layout>
@@ -39,14 +32,13 @@ export const Resume = () => {
               })}
             </div>
           </div>
-
           <ResumeSectionTitle>Education</ResumeSectionTitle>
-          {data && data?.resume && data.resume?.education?.map((edu: EducationType) => (
+          {data && data?.resume && data.resume.education?.map((edu: EducationType) => (
             <Education key={edu.school} {...edu} />
           ))}
 
           <ResumeSectionTitle>Recent Coursework</ResumeSectionTitle>
-          <CoursesList courses={data?.courses} />
+          <CoursesList courses={data.courses} />
         </div>
       </div>
     </Layout>

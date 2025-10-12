@@ -14,6 +14,8 @@ import { WritingSample } from './Pages/WritingSample';
 import NotFound from './Pages/NotFound';
 import Portfolio from './Pages/Portfolio';
 
+export const siteData = React.createContext(data);
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,10 +49,11 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
+  <siteData.Provider value={data}>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </siteData.Provider>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

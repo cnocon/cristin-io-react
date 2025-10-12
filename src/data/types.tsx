@@ -39,7 +39,7 @@ export type EducationType = {
   title: string,
   schoolUrl: string | null,
   location: string,
-  honors: HonorType[],
+  honors?: HonorType[],
   start: string,
   end: string
 }

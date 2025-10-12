@@ -1,15 +1,16 @@
 import React from "react";
 import { Course } from "../Course/Course";
+import { IconType } from "react-icons";
 
 export type CoursePropsType = {
   title: string,
   url: string | null,
   platform: string | null,
-  Icon?: any,
+  Icon?: IconType,
   imageUrl?: string,
-  instructor?: string,
+  instructor?: string | null,
   completedDate: string | null,
-  certificateUrl?: string,
+  certificateUrl?: string | null,
   description: string | null,
   color?: string,
   backgroundColor?: string
