@@ -1,0 +1,11 @@
+a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Styles applied only when the link is active */
+a[aria-current="page"] {
+  color: #00f5f0;
+  text-decoration: none;
+}
