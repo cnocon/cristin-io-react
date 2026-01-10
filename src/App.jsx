@@ -2,7 +2,7 @@ import React from "react";
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.scss'
 import {
   Routes,
   Route
@@ -10,7 +10,6 @@ import {
 import Home from "./components/pages/Home.jsx";
 import Resume from "./components/pages/Resume.jsx";
 import Portfolio from "./components/pages/Portfolio.jsx";
-import './components/layout.module.scss';
 import Layout from './components/Layout.jsx';
 import Blog from "./components/pages/Blog.jsx"
 import NotFound from "./components/pages/NotFound.jsx";
@@ -21,9 +20,7 @@ const { Provider } = DataContext;
 const data = { title: "Cristin O'Connor" };
 
 function App({ children }) {
-
   return (
-
     <Provider value={data}>
       <Layout>
         <Routes>

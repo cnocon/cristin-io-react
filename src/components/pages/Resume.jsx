@@ -3,8 +3,8 @@ import React from "react";
 const Resume = () => {
   return (
     <section>
-      <h2>Resume</h2>
-      <p>This is the resume page.</p>
+      <h2>Résumé</h2>
+      <p>This is the résumé page.</p>
     </section>
   );
 }

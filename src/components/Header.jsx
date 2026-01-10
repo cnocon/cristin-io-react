@@ -1,19 +1,20 @@
 import React from "react";
 import "./header.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import illustration from "../assets/illustration.svg";
+import "./header.module.scss";
 
 const Header = () => {
   return (
     <header>
-      <img src={illustration} alt="Cristin O'Connor" />
+      <img className="avatar" src={illustration} alt="Cristin O'Connor" />
       <h1>
-        Cristin O'Connor
+        <Link to="/">Cristin O'Connor</Link>
         <p>Frontend Software Engineer</p>
       </h1>
       <nav>
         <ul>
-          <li><NavLink to="/resume">Resume</NavLink></li>
+          <li><NavLink to="/resume">Résumé</NavLink></li>
           <li><NavLink to="/portfolio">Portfolio</NavLink></li>
           <li><NavLink to="/blog">Blog</NavLink></li>
         </ul>
