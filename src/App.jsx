@@ -11,7 +11,8 @@ import Home from "./components/pages/Home.jsx";
 import Resume from "./components/pages/Resume.jsx";
 import Portfolio from "./components/pages/Portfolio.jsx";
 import Layout from './components/Layout.jsx';
-import Blog from "./components/pages/Blog.jsx"
+import BlogIndex from "./blog/BlogIndex.jsx";
+import BlogPost from "./blog/BlogPost.jsx";
 import NotFound from "./components/pages/NotFound.jsx";
 
 export const DataContext = React.createContext();
@@ -27,7 +28,8 @@ function App({ children }) {
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/blog" element={<BlogIndex />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

@@ -7,10 +7,14 @@ import "./header.module.scss";
 const Header = () => {
   return (
     <header>
-      <img className="avatar" src={illustration} alt="Cristin O'Connor" />
+
       <h1>
-        <Link to="/">Cristin O'Connor</Link>
-        <p>Frontend Software Engineer</p>
+        <Link to="/">
+          <img className="avatar" src={illustration} alt="Cristin O'Connor" />
+          <span>Cristin O'Connor</span>
+          <p>Frontend Software Engineer</p>
+        </Link>
+
       </h1>
       <nav>
         <ul>
